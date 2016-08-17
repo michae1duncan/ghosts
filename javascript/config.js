@@ -4,22 +4,22 @@ function init(){
 
     configOptions = {
         webmap : "015f54544e0a49328adbdfe8dec58464",
-        title : "Beating the Odds: A Year in the Life of a Piping Plover",
-        subtitle : "Piping Plovers flock to the same shores that attract people. These birds are on the brink, with only 8,000 adults left. From Canada to the Caribbean, Audubon is working to safeguard sandy reaches critical to the birds' survival, and encouraging people to share the beach.",
+        title : "Ghost of ...",
+        subtitle : "Subtitle",
         tabTitles : [{
     		"title" : "<span class='tabTextBig'>Intro</span>",
             "season" : "intro"
 		},{
-			"title" : "<span class='tabTextBig'>Summer</span>",
+			"title" : "<span class='tabTextBig'>West Temple</span>",
             "season" : "summer"
 		},{
-			"title" : "<span class='tabTextBig'>Fall</span>",
+			"title" : "<span class='tabTextBig'>South Temple</span>",
             "season" : "fall"
 		},{
-			"title" : "<span class='tabTextBig'>Winter</span>",
+			"title" : "<span class='tabTextBig'>North Temple</span>",
             "season" : "winter"
 		},{
-			"title" : "<span class='tabTextBig'>Spring</span>",
+			"title" : "<span class='tabTextBig'>State Street</span>",
             "season" : "spring"
 		}],
         geometryserviceurl:"http://tasks.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer",
