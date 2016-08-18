@@ -87,7 +87,7 @@ var getWidth = function(){
         return 350;
     }
     else{
-        return 450;
+        return 550;
     }
 };
 
@@ -95,13 +95,13 @@ var changeSidePanel = function(){
     $("#leftPane").css("width",getWidth());
     $(".contentSlide").css("width",getWidth());
     if(getWidth() === 350){
-        $(".fader").css("height",245);
-        $(".tabTitle").css("font-size",16);
+        $(".fader").css("height",265);
+        $(".tabTitle").css("font-size",18);
         $(".popupTitle").css("font-size",16);
         $(".textContent").css("font-size",13);
     }
     else{
-        $(".fader").css("height",315);
+        $(".fader").css("height",415);
         $(".tabTitle").css("font-size",24);
         $(".popupTitle").css("font-size",24);
         $(".textContent").css("font-size",15);

@@ -1,5 +1,5 @@
 html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;font-family:Arial, Helvetica, sans-serif;}
-html,body{height:100%;width:100%;overflow:hidden; font-family:Georgia, "Times New Roman", Times, serif;}
+html,body{height:100%;width:100%;overflow:hidden; font-family:Georgia, serif;}
 h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,th {font-weight:normal; font-style:normal; font-family:Arial, Helvetica, sans-serif; color:#fff;}
 ul,ol {list-style:none;}
 fieldset,img,hr {border:none; outline:none;}
@@ -13,13 +13,13 @@ table {border-collapse:collapse; border-spacing:0;}
 }
 
 a{
-	color:#000;
+	color: #C5D5D5
 }
 
 h1{
 	font-size:1.4em;
 	font-weight:bold;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Georgia, serif;
 }
 
 #mainWindow{
@@ -37,20 +37,29 @@ h1{
 
 #headerArea{
 	height:115px;
-	padding:20px 25px 0px 25px;
+	padding:18px 25px 0px 25px;
 }
 
 #title{
-	padding-bottom:10px;
-	white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow:ellipsis;
+	margin-top: 0px;
+  padding-top: 0px;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: left;
+  overflow: hidden;
 }
 
 #subtitle{
-	color:#fff;
-    overflow: hidden;
+	font-size: 24px;
+	margin-top: 13px;
+	overflow: hidden;
+	overflow-y: auto;
+	font-weight: 400;
+	line-height: 18px;
+	word-wrap: break-word;
+	height: 34px;
+	color: #C5D5D5;
+	font-family:Georgia, serif;
 }
 
 #logoArea{
@@ -67,9 +76,8 @@ h1{
 }
 
 #smLink{
-	color:#fff;
-	font-family:Arial, Helvetica, sans-serif;
-	font-weight:bold;
+	color: #C5D5D5
+	font-family:Georgia, serif;
 	font-size:0.82em;
 	text-decoration:none;
 	outline:none;
@@ -151,19 +159,19 @@ h1{
 
 .tabText{
 	color:#fff;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Georgia, serif;
 	text-overflow: ellipsis;
     -o-text-overflow:ellipsis;
 	overflow:hidden;
     text-align:center;
-	padding:5px 5px 0px 7px;
+	padding:9px 5px 0px 7px;
     font-weight:bold;
 }
 
 .tabTextBig{
-    font-size:24px;
-    opacity:0.7;
-    filter: alpha(opacity=70);
+    font-size:18px;
+    opacity:0.75;
+    filter: alpha(opacity=75);
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 }
 
