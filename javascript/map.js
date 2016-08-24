@@ -179,11 +179,11 @@ var createMap = function(){
             changeSidePanel();
             $("#zoomToggle").show();
             dojo.forEach(map.getLayer(map.graphicsLayerIds[0]).graphics,function(g){
-                if(g.attributes.Site_title === "Little Talbot Island, FL"){
-                    g.attributes.Photo_1_credit = "Walker Golder";
+                if(g.attributes.Site_title === "37 North West Temple (1)"){
+                    g.attributes.Photo_1_credit = "Salt Lake County Archives";
                 }
-                if(g.attributes.Site_title === "Tigertail Beach, FL"){
-                    g.attributes.Site_title = "Tigertail Lagoon and Sand Dollar Island, FL";
+                if(g.attributes.Site_title === "101 North West Temple (2)"){
+                    g.attributes.Site_title = "Salt Lake County Archives";
                 }
             });
         }
@@ -194,11 +194,11 @@ var createMap = function(){
                 changeSidePanel();
                 $("#zoomToggle").show();
                 dojo.forEach(map.getLayer(map.graphicsLayerIds[0]).graphics,function(g){
-                    if(g.attributes.Site_title === "Little Talbot Island, FL"){
-                        g.attributes.Photo_1_credit = "Walker Golder";
+                    if(g.attributes.Site_title === "37 North West Temple (1)"){
+                        g.attributes.Photo_1_credit = "Salt Lake County Archives";
                     }
-                    if(g.attributes.Site_title === "Tigertail Beach, FL"){
-                        g.attributes.Site_title = "Tigertail Lagoon and Sand Dollar Island, FL";
+                    if(g.attributes.Site_title === "101 North West Temple (2)"){
+                        g.attributes.Site_title = "Salt Lake County Archives";
                     }
                 });
             });
