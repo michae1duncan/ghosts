@@ -176,7 +176,7 @@ h1{
 }
 
 #leftPane {
-    width:450px;
+    width:550px;
 	height:100%;
 	font-size:0.9em;
     overflow:hidden;
@@ -190,7 +190,7 @@ h1{
 
 .contentSlide{
     height:100%;
-    width:450px;
+    width:550px;
     float:left;
 }
 
@@ -222,7 +222,7 @@ h1{
 
 .fader{
     background:#000;
-    height:315px;
+    height:415px;
     width:100%;
     overflow:hidden;
 }

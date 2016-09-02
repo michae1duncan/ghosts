@@ -274,7 +274,7 @@ var setLayers = function(sec){
     section = sec;
 
     if($(".contentSlide").length === sectionData.length){
-      console.log(map);
+      //console.log(map);
         dojo.forEach(map.getLayer(findLayerName("mvWestTemple2016")).graphics,function(grp){
             $(".contentSlide."+grp.attributes.Season.toLowerCase()).last().after("<div class='contentSlide popupSlide "+grp.attributes.Season.toLowerCase()+"Slide "+grp.attributes.Season.toLowerCase()+"' season='"+grp.attributes.Season_Number+"'><div class='photoMargin'></div><div class='popup fader "+grp.attributes.Season.toLowerCase()+"'>"+getPhotoTags(grp.attributes)+"</div><div class='photoCreditCon "+grp.attributes.Season.toLowerCase()+"' style='color:#ccc;'>"+getImgLength(grp.attributes)+"<p class='photoCredit'>"+grp.attributes.Photo_1_credit+"</p></div><table class='titleBar "+grp.attributes.Season.toLowerCase()+"'><tbody><tr><td class='prevArrowCon "+grp.attributes.Season.toLowerCase()+" arrowCon popupArrow' style='width:10px; padding:10px;'><div class='prevArrow'></div></td><td class='popupTitle "+grp.attributes.Season.toLowerCase()+"title'>"+grp.attributes.Point_name+"</td><td class='nextArrowCon "+grp.attributes.Season.toLowerCase()+" arrowCon popupArrow' style='width:10px; padding:10px;'><div class='nextArrow'></div></td></tr></tbody></table><div class='textContent "+grp.attributes.Season.toLowerCase()+"'><strong>"+grp.attributes.Site_title+"</strong><br>"+grp.attributes.Description+"</div></div>");
         });
