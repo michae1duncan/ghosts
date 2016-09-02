@@ -274,7 +274,8 @@ var setLayers = function(sec){
     section = sec;
 
     if($(".contentSlide").length === sectionData.length){
-        dojo.forEach(map.getLayer(findLayerName("csv")).graphics,function(grp){
+      console.log(map);
+        dojo.forEach(map.getLayer(findLayerName("mvWestTemple2016")).graphics,function(grp){
             $(".contentSlide."+grp.attributes.Season.toLowerCase()).last().after("<div class='contentSlide popupSlide "+grp.attributes.Season.toLowerCase()+"Slide "+grp.attributes.Season.toLowerCase()+"' season='"+grp.attributes.Season_Number+"'><div class='photoMargin'></div><div class='popup fader "+grp.attributes.Season.toLowerCase()+"'>"+getPhotoTags(grp.attributes)+"</div><div class='photoCreditCon "+grp.attributes.Season.toLowerCase()+"' style='color:#ccc;'>"+getImgLength(grp.attributes)+"<p class='photoCredit'>"+grp.attributes.Photo_1_credit+"</p></div><table class='titleBar "+grp.attributes.Season.toLowerCase()+"'><tbody><tr><td class='prevArrowCon "+grp.attributes.Season.toLowerCase()+" arrowCon popupArrow' style='width:10px; padding:10px;'><div class='prevArrow'></div></td><td class='popupTitle "+grp.attributes.Season.toLowerCase()+"title'>"+grp.attributes.Point_name+"</td><td class='nextArrowCon "+grp.attributes.Season.toLowerCase()+" arrowCon popupArrow' style='width:10px; padding:10px;'><div class='nextArrow'></div></td></tr></tbody></table><div class='textContent "+grp.attributes.Season.toLowerCase()+"'><strong>"+grp.attributes.Site_title+"</strong><br>"+grp.attributes.Description+"</div></div>");
         });
 
@@ -356,7 +357,7 @@ var setLayers = function(sec){
                     }
                     if(current.hasClass("popupSlide")){
                         var title = current.children(".titleBar").children("tbody").children("tr").children(".popupTitle").html();
-                        dojo.forEach(map.getLayer(findLayerName("csv")).graphics,function(grp){
+                        dojo.forEach(map.getLayer(findLayerName("mvWestTemple2016")).graphics,function(grp){
                             if (grp.attributes.Point_name === title){
                                 map.centerAndZoom(grp.geometry,3);
                             }
@@ -396,7 +397,7 @@ var setLayers = function(sec){
                     }
                     if(current.hasClass("popupSlide")){
                         var title = current.children(".titleBar").children("tbody").children("tr").children(".popupTitle").html();
-                        dojo.forEach(map.getLayer(findLayerName("csv")).graphics,function(grp){
+                        dojo.forEach(map.getLayer(findLayerName("mvWestTemple2016")).graphics,function(grp){
                             if (grp.attributes.Point_name === title){
                                 map.centerAndZoom(grp.geometry,3);
                             }
@@ -420,14 +421,14 @@ var setLayers = function(sec){
 
     resetLayout();
 
-    map.getLayer(findLayerName("csv")).show();
-    map.getLayer(findLayerName("SpringMigration")).hide();
-    map.getLayer(findLayerName("FallMigration")).hide();
+    map.getLayer(findLayerName("mvWestTemple2016")).show();
+    //map.getLayer(findLayerName("SpringMigration")).hide();
+    //map.getLayer(findLayerName("FallMigration")).hide();
     if(sec === 1){
         $("#legendImg").attr("src","images/legends/PloverSummer.jpg");
-        map.getLayer(findLayerName("summer")).show();
-        map.getLayer(findLayerName("winter")).hide();
-        dojo.forEach(map.getLayer(findLayerName("csv")).graphics,function(grp){
+        //map.getLayer(findLayerName("summer")).show();
+        //map.getLayer(findLayerName("winter")).hide();
+        dojo.forEach(map.getLayer(findLayerName("mvWestTemple2016")).graphics,function(grp){
             if(grp.attributes.Season_Number === sec){
                 grp.show();
             }
@@ -441,10 +442,10 @@ var setLayers = function(sec){
     }
     else if(sec === 2){
         $("#legendImg").attr("src","images/legends/PloverFall.jpg");
-        map.getLayer(findLayerName("FallMigration")).show();
-        map.getLayer(findLayerName("summer")).hide();
-        map.getLayer(findLayerName("winter")).hide();
-        dojo.forEach(map.getLayer(findLayerName("csv")).graphics,function(grp){
+        //map.getLayer(findLayerName("FallMigration")).show();
+        //map.getLayer(findLayerName("summer")).hide();
+        //map.getLayer(findLayerName("winter")).hide();
+        dojo.forEach(map.getLayer(findLayerName("mvWestTemple2016")).graphics,function(grp){
             if(grp.attributes.Season_Number === sec){
                 grp.show();
             }
@@ -459,9 +460,9 @@ var setLayers = function(sec){
     }
     else if(sec === 3){
         $("#legendImg").attr("src","images/legends/PloverWinter.jpg");
-        map.getLayer(findLayerName("summer")).hide();
-        map.getLayer(findLayerName("winter")).show();
-        dojo.forEach(map.getLayer(findLayerName("csv")).graphics,function(grp){
+        //map.getLayer(findLayerName("summer")).hide();
+        //map.getLayer(findLayerName("winter")).show();
+        dojo.forEach(map.getLayer(findLayerName("mvWestTemple2016")).graphics,function(grp){
             if(grp.attributes.Season_Number === sec){
                 grp.show();
             }
@@ -476,10 +477,10 @@ var setLayers = function(sec){
     }
     else if(sec === 4){
         $("#legendImg").attr("src","images/legends/PloverSpring.jpg");
-        map.getLayer(findLayerName("SpringMigration")).show();
-        map.getLayer(findLayerName("summer")).hide();
-        map.getLayer(findLayerName("winter")).hide();
-        dojo.forEach(map.getLayer(findLayerName("csv")).graphics,function(grp){
+        //map.getLayer(findLayerName("SpringMigration")).show();
+        //map.getLayer(findLayerName("summer")).hide();
+        //map.getLayer(findLayerName("winter")).hide();
+        dojo.forEach(map.getLayer(findLayerName("mvWestTemple2016")).graphics,function(grp){
             if(grp.attributes.Season_Number === sec){
                 grp.show();
             }
@@ -494,9 +495,9 @@ var setLayers = function(sec){
     }
     else{
         $("#legendImg").attr("src","images/legends/PloverIntro.jpg");
-        map.getLayer(findLayerName("csv")).hide();
-        map.getLayer(findLayerName("summer")).show();
-        map.getLayer(findLayerName("winter")).show();
+        map.getLayer(findLayerName("mvWestTemple2016")).hide();
+        //map.getLayer(findLayerName("summer")).show();
+        //map.getLayer(findLayerName("winter")).show();
 
         seasonExtent = new esri.geometry.Extent({"xmin":-12202120.917371638,"ymin":2129558.052478955,"xmax":-5010925.296304167,"ymax":6160541.176124938,
   "spatialReference":{"wkid":102100}});

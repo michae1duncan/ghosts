@@ -3,8 +3,8 @@ var configOptions,sectionData;
 function init(){
 
     configOptions = {
-        webmap : "015f54544e0a49328adbdfe8dec58464",
-        //webmap : "d28fc177ccc3425da2df887ce44c1bb2",
+        //webmap : "015f54544e0a49328adbdfe8dec58464",
+        webmap : "d28fc177ccc3425da2df887ce44c1bb2",
         //webmap : "8895b3143f294cac87a614c81ce1f084",
         title : "Ghosts of West Temple",
         subtitle : "An online exhibit presented by Salt Lake County Archives",

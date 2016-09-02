@@ -102,7 +102,7 @@ var createMap = function(){
 
         dojo.connect(dijit.byId("map"),"resize",map,map.resize);
 
-        dojo.connect(map.getLayer(findLayerName("csv")),"onMouseOver",function(event){
+        dojo.connect(map.getLayer(findLayerName("mvWestTemple2016")),"onMouseOver",function(event){
             if(iPad === false){
                 map.setCursor("pointer");
                 $("#hoverInfo").html(event.graphic.attributes.Site_title);
@@ -122,12 +122,12 @@ var createMap = function(){
             }
         });
 
-        dojo.connect(map.getLayer(findLayerName("csv")),"onMouseOut",function(event){
+        dojo.connect(map.getLayer(findLayerName("mvWestTemple2016")),"onMouseOut",function(event){
             map.setCursor("default");
             hideInfo($("#hoverInfo"),$("#hoverInfoArrow"));
         });
 
-        dojo.connect(map.getLayer(findLayerName("csv")),"onClick",function(event){
+        dojo.connect(map.getLayer(findLayerName("mvWestTemple2016")),"onClick",function(event){
             if(iPad === false){
                 $(".contentSlide").each(function(){
                     if($(this).children(".titleBar").children("tbody").children("tr").children(".popupTitle").html() === event.graphic.attributes.Point_name){
@@ -154,7 +154,7 @@ var createMap = function(){
 
         dojo.connect(map,"onExtentChange",function(){
             var title = $(".currentSlide").children(".titleBar").children("tbody").children("tr").children(".popupTitle").html();
-            dojo.forEach(map.getLayer(findLayerName("csv")).graphics,function(grp){
+            dojo.forEach(map.getLayer(findLayerName("mvWestTemple2016")).graphics,function(grp){
                 if (grp.attributes.Point_name === title){
                     $("#hoverInfoSlide").html(grp.attributes.Site_title);
                     positionInfo(grp.geometry,$("#hoverInfoSlide"),$("#hoverInfoArrowSlide"));
@@ -256,7 +256,7 @@ function buildLayersList(layers){
         var layerInfos = [];
         dojo.forEach(layers, function(mapLayer, index){
           var layerInfo = {};
-          if (mapLayer.featureCollection && mapLayer.type !== "CSV") {
+          if (mapLayer.featureCollection && mapLayer.type !== "mvWestTemple2016") {
             if (mapLayer.featureCollection.showLegend === true) {
               dojo.forEach(mapLayer.featureCollection.layers, function(fcMapLayer){
                 if (fcMapLayer.showLegend !== false) {
