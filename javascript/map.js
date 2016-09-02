@@ -97,7 +97,7 @@ var createMap = function(){
         ignorePopups:true
     });
 
-    console.log(lods);
+    //console.log(lods);
 
     mapDeferred.addCallback(function(response){
         map = response.map;
